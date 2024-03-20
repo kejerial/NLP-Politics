@@ -83,12 +83,8 @@ def main():
     directory_path = "./presidential_documents/addresses"
     files = os.listdir(directory_path)
 
-    count = 1
     for filename in files:
         process_file(os.path.join(directory_path, filename))
-        if (count % 300 == 0):
-            print(str(round((count / 2989) * 100, 2)) + "% DONE")
-        count += 1
 
     # Print results
     for year, counts in sorted(counts_by_year.items()):
