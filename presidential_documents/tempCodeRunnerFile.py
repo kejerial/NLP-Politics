@@ -1,1 +1,1 @@
-
+   ent_text = ent.text.lower()
